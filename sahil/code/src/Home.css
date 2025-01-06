@@ -1,0 +1,47 @@
+
+.Main-Home{
+    display: flex;
+    width: 100%;
+    margin: 0 5.8rem 0 5.8rem;
+    color: white;
+}
+
+.main-container{
+    margin: 5rem 0 0 0;
+}
+
+.main-container p{
+    margin-bottom: 2rem;
+}
+
+.Work-Name {
+    color: rgb(255, 0, 106);
+}
+
+.img-container{
+    margin: 10px 7rem 0 0;
+}
+
+@media (max-width: 750px){
+    .img-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px){
+    .Main-Home{
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+
+    .main-container{
+        margin: 0 3rem 3rem 3rem;
+    }
+    .img-container{
+        margin: 0;
+    }
+
+    #imgg{
+        width: 100%;
+    }
+}

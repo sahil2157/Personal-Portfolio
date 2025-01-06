@@ -1,0 +1,42 @@
+.j-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px; 
+}
+
+.experience, .achievements {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(44, 44, 44);
+    box-shadow: 0 4px 4px rgb(255, 0, 106); 
+}
+
+.experience h1, .achievements h1 {
+    color: rgb(255, 0, 106);
+    font-size: 24px;
+    margin: 0 0 2rem 0;
+}
+
+.experience h3, .achievements h3 {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.experience p, .achievements p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f8f8f8;
+}
+
+@media (max-width: 575px) {
+    .j-container {
+        margin: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}

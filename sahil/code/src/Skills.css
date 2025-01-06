@@ -1,0 +1,105 @@
+.skill-container {
+    margin: 5.8rem 5.8rem 0 5.8rem;
+  }
+  
+  .s-title {
+    text-align: center;
+    color: white;
+  }
+
+  .c1 h3{
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    width: auto;
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .c1 {
+    width: 17rem;
+    height: 10.5rem;
+    padding: 1rem 0 0 0;
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+    box-shadow: 0 4px 4px rgb(255, 0, 106); 
+  }
+  
+  .c1 img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 1080px){
+    .c1{
+        width: 15rem;
+        height: 12rem;
+    }
+  }
+
+  @media (max-width: 960px){
+    .c1{
+        width: 13rem;
+        height: 12rem;
+    }
+  }
+
+  @media (max-width: 850px){
+    .c1 img {
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover;
+        margin-bottom: 1rem;
+      }
+    .c1{
+        width: 10rem;
+        height: 12rem;
+        gap: 1px;
+    }
+  }
+  @media (max-width: 710px){
+    .c1 img {
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover;
+        margin-bottom: 1rem;
+      }
+    .c1{
+        width: 8rem;
+        height: 9rem;
+        gap: 1px;
+    }
+
+    .cards{
+        gap: 10px;
+    }
+  }
+
+  @media (max-width: 575px){
+    .skill-container{
+        margin: 3rem;
+    }
+    .c1{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .cards{
+        gap: 15px;
+    }
+
+    .c1 h3{
+        font-size: small;
+        padding: 0; 
+        margin: 0;
+    }
+  }

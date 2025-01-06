@@ -1,0 +1,141 @@
+.cards-container {
+  margin: 1rem 5.8rem 0 5.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+#title-p {
+  margin: 2rem 0 0 0;
+  text-align: center;
+  color: white;
+}
+
+.card {
+  background-color: rgb(44, 44, 44);
+  box-shadow: 0 4px 4px rgb(255, 0, 106);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px; /* Set fixed height for equal height */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  padding: 5px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  flex-grow: 1; /* Ensures that the content expands to fill the available space */
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.2rem 0;
+  color: rgb(255, 0, 106);
+}
+
+.card-description {
+  font-size: 0.9em;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.card-button {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1080px) {
+  .card-img {
+      padding: 2px;
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+  }
+
+  .card {
+      width: 200px;
+      height: 350px; /* Ensure cards have equal height */
+  }
+
+  .cards-container {
+      margin: 2rem 1rem 0 1rem;
+      gap: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .cards-container {
+      padding: 0;
+      margin: 2rem 1rem 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .card {
+      width: 150px;
+      height: 300px; /* Ensure cards have equal height */
+  }
+
+  .card-img {
+      padding: 2px;
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+  }
+}
+
+@media (max-width: 575px) {
+  .cards-container {
+      padding: 0;
+      margin: 2rem 1rem 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .card {
+      width: 150px;
+      height: 300px; /* Ensure cards have equal height */
+  }
+
+  .card-img {
+      padding: 2px;
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+  }
+}
